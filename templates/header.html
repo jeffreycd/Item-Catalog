@@ -1,0 +1,21 @@
+<div id="header">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      	<div>
+      		<h1>Item Catalog</h1>
+      	</div>
+        <div class="text-right">
+          {% if 'username' not in session %}
+            <a href="{{url_for('showLogin')}}">Click Here to Log in </a>
+          {% else %}
+            <span class='profile-picture'>
+              <img src="{{session.picture}}" alt="User Profile Picture" width="42px" height="42px"> </img>
+            </span>
+            <a href="{{url_for('disconnect')}}">Log Out</a>
+          {% endif %}
+        </div>
+      </div>
+  </div>
+</div>
+</div>
