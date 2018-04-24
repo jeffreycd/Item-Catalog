@@ -2,6 +2,7 @@ from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
+import psycopg2
 
 Base = declarative_base()
 
@@ -48,6 +49,6 @@ class Item(Base):
            'category'     : self.category.name
        }
 
-engine = create_engine('sqlite:///itemcatalog.db')
+engine = create_engine('postgresql://catalog:fr3Ed0@localhost/catalog')
 
 Base.metadata.create_all(engine)
