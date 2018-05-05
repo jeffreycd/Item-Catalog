@@ -9,7 +9,7 @@ This application is intended to be submitted for evaluation as part of the Udaci
 ## Getting Started
 These instructions provide the necessary steps and resources needed to run the application in a test\dev environment.
 
-###Prerequisites
+### Prerequisites
 This software is needed in order to successfully run the application.
 The application uses a pre configured virtual machine that has additional necessary resources preinstalled.
 - [Vagrant](https://www.vagrantup.com/ "Vagrant Homepage")
@@ -18,7 +18,7 @@ The application uses a pre configured virtual machine that has additional necess
 
 Other technologies used in this application include Google and Facebook OAuth2 APIs, Bootstrap, CSS, HTML5, Flask, SQLAlchemy
 
-###How to Run
+### How to Run
 1. Extract files from provided ItemCatalog.zip to vagrant shared folder
 2. Start vagrant virtual machine
 
